@@ -16,7 +16,7 @@ AgoraChooseSongDemo assign a room
 }];
 
 ```
-Next, download the **Agora Video SDK** from [Agora.io SDK](https://www.agora.io/en/blog/download/). Unzip the downloaded SDK package and copy the **libs/AgoraRtcEngineKit.framework** to the "AgoraChooseSongDemo/AgoraChooseSongDemo" folder in project, copy the **libs/AgoraRtcEngineKit.framework** to the "AgoraChorusDemo/AgoraChorusDemo" folder in project . 
+Contact voice net business to download Android platform chorus SDK. For details, please contact sales@agora.io, telephone 4006326626. Unzip the downloaded SDK package and copy the **libs/AgoraRtcEngineKit.framework** to the "AgoraChooseSongDemo/AgoraChooseSongDemo" folder in project, copy the **libs/AgoraRtcEngineKit.framework** to the "AgoraChorusDemo/AgoraChorusDemo" folder in project . 
 
 Finally, Open AgoraChooseSongDemo.xcodeproj,  AgoraChorusDemo.xcodeproj  connect your iPhone／iPad device, setup your development signing and run.
 

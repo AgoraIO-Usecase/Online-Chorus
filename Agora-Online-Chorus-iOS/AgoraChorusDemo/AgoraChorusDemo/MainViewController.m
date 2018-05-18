@@ -43,23 +43,11 @@
 
 - (void)showRoleSelection {
     UIAlertController *sheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *broadcaster = [UIAlertAction actionWithTitle:@"#parms1" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *broadcaster = [UIAlertAction actionWithTitle:@"加入房间" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self joinWithRole:1];
     }];
-    UIAlertAction *audience = [UIAlertAction actionWithTitle:@"#parms2" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self joinWithRole:2];
-    }];
-    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"#parms3" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self joinWithRole:3];
-    }];
-    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"#parms4" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        [self joinWithRole:4];
-    }];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:nil];
     [sheet addAction:broadcaster];
-    [sheet addAction:audience];
-    [sheet addAction:action1];
-    [sheet addAction:action2];
+
     [sheet addAction:cancel];
     [sheet popoverPresentationController].sourceView = self.popoverSourceView;
     [sheet popoverPresentationController].permittedArrowDirections = UIPopoverArrowDirectionUp;
