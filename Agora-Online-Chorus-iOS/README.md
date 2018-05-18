@@ -21,7 +21,8 @@ AgoraChooseSongDemo指定房间
 
 ```
 
-联系声网商务下载 iOS 平台合唱 SDK。详情请洽 sales@agora.io ，电话 4006326626。将其中的 **AgoraRtcEngineKit.framework** 分别复制到本项目的 “AgoraChooseSongDemo/AgoraChooseSongDemo” 和 “AgoraChorusDemo/AgoraChorusDemo” 文件夹下。
+联系声网商务下载 iOS 平台合唱 SDK。详情请洽 sales@agora.io ，电话 4006326626。
+将其中的 **AgoraRtcEngineKit.framework** 分别复制到本项目的 “AgoraChooseSongDemo/AgoraChooseSongDemo” 和 “AgoraChorusDemo/AgoraChorusDemo” 文件夹下。
 
 最后使用 XCode 打开 AgoraChooseSongDemo.xcodeproj 和 AgoraChorusDemo.xcodeproj 工程 ，连接 iPhone／iPad 测试设备，设置有效的开发者签名后即可运行。
 
