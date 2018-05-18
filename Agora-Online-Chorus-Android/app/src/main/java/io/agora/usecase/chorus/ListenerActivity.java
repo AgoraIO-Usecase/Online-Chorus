@@ -86,7 +86,6 @@ public class ListenerActivity extends AppCompatActivity {
             mRtcEngine.leaveChannel();
         }
 
-        RtcEngine.destroy();
         mRtcEngine = null;
     }
 }

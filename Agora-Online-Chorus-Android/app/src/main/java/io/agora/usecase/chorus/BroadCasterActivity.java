@@ -103,9 +103,6 @@ public class BroadCasterActivity extends AppCompatActivity {
         try {
             mRtcEngine = RtcEngine.create(this, getResources().getString(R.string.agora_app_id), mHandler);
 
-            mRtcEngine.setParameters("{\"che.audio.lowlatency\":true}");
-            mRtcEngine.setParameters("{\"rtc.lowlatency\":1}");
-
             mRtcEngine.joinChannel(null, mChannelName, "", 0);
 
             mRtcEngine.muteAllRemoteAudioStreams(true);
@@ -133,7 +130,6 @@ public class BroadCasterActivity extends AppCompatActivity {
             mRtcEngine.leaveChannel();
         }
 
-        RtcEngine.destroy();
         mRtcEngine = null;
     }
 }
