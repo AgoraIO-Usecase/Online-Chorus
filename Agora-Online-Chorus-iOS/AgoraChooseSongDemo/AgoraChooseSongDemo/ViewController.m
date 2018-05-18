@@ -9,8 +9,7 @@
 #import "ViewController.h"
 
 
-#import <AgoraRtcEngineKit/AgoraRtcEngineKit.h>
-
+#import "AgoraAudioKit.framework/Headers/AgoraRtcEngineKit.h"
 @interface ViewController ()<AgoraRtcEngineDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *start_voice;
@@ -46,7 +45,7 @@
     [self.rtcEngine setVideoProfile:AgoraVideoProfileLandscape360P_4 swapWidthAndHeight:true];
     [self.rtcEngine setParameters:@"{\"che.audio.lowlatency\":true}"];
     [self.rtcEngine setParameters:@"{\"rtc.lowlatency\":1}"];
-    [self.rtcEngine joinChannelByToken:nil channelId:@"<#roomname#>"  info:nil uid:0 joinSuccess:^(NSString * _Nonnull channel, NSUInteger uid, NSInteger elapsed) {
+    [self.rtcEngine joinChannelByToken:nil channelId:@"hyy"  info:nil uid:0 joinSuccess:^(NSString * _Nonnull channel, NSUInteger uid, NSInteger elapsed) {
     }];
     [self.rtcEngine setEnableSpeakerphone:true];
     [self.rtcEngine startPreview];
