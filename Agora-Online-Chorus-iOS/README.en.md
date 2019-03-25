@@ -1,21 +1,16 @@
-# AgoraChooseSongDemo AgoraChorusDemo
+# Agora Online Chorus
 
 *其他语言版本： [简体中文](README.md)*
 
 The client show the method of  how to chorus 
 
 ## Running the App
-First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "ViewController.m" with your App ID.
+First, create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID. Update "KeyCenter.swift" with your App ID.
 
 ```
-[AgoraRtcEngineKit sharedEngineWithAppId:@"<#APP_ID#>" delegate:self] 
+static let AppId: String = "Your App ID"
 ```
-AgoraChooseSongDemo assign a room
-```
-[self.rtcEngine joinChannelByToken:nil channelId:@"<#roomname#>"  info:nil uid:0 joinSuccess:^(NSString * _Nonnull channel, NSUInteger uid, NSInteger elapsed) {
-}];
 
-```
 Contact voice net business to download Android platform chorus SDK.For details, please contact sales@agora.io, telephone 4006326626.
 Unzip the downloaded SDK package and copy the **libs/AgoraRtcEngineKit.framework** to the "AgoraChooseSongDemo/AgoraChooseSongDemo" folder in project, copy the **libs/AgoraRtcEngineKit.framework** to the "AgoraChorusDemo/AgoraChorusDemo" folder in project . 
 

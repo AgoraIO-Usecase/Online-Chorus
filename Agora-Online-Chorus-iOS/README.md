@@ -1,5 +1,4 @@
-# AgoraChooseSongDemo AgoraChorusDemo
-
+# Agora Online Chorus
 
 
 *Read this in other languages: [English](README.en.md)*
@@ -7,18 +6,10 @@
 这个开源示例项目演示了如何实现合唱的功能。
 
 ## 运行示例程序
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。将 AppID 填写进 ViewController.m
-
-
-```
-[AgoraRtcEngineKit sharedEngineWithAppId:@"<#APP_ID#>" delegate:self] 
+首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。将 AppID 填写进 KeyCenter.swift
 
 ```
-AgoraChooseSongDemo指定房间
-```
-[self.rtcEngine joinChannelByToken:nil channelId:@"<#roomname#>"  info:nil uid:0 joinSuccess:^(NSString * _Nonnull channel, NSUInteger uid, NSInteger elapsed) {
-}];
-
+static let AppId: String = "Your App ID"
 ```
 
 联系声网商务下载 iOS 平台合唱 SDK。详情请洽 sales@agora.io ，电话 4006326626。
