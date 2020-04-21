@@ -321,13 +321,13 @@ agoraKit.setParameters("{\"rtc.lowlatency\":1}")
 
 Android:
 
-* 启用耳返功能, 详见 [enableInEarMonitoring()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
-* 设置耳返音量，相见 [setInEarMonitoringVolume](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android)  。
+* 启用耳返功能, 详见 [enableInEarMonitoring()](https://docs.agora.io/cn/Voice/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#aeb014fcf7ec84291b9b39621e09772ea) 。
+* 设置耳返音量，相见 [setInEarMonitoringVolume](https://docs.agora.io/cn/Voice/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#af71afdf140660b10c4fb0c40029c432d)  。
 
 iOS:
 
-* 启用耳返功能, 详见 [enableInEarMonitoring()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
-* 设置耳返音量，相见 [setInEarMonitoringVolume](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS)  。
+* 启用耳返功能, 详见 [enableInEarMonitoring()](https://docs.agora.io/cn/Voice/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/enableInEarMonitoring:) 。
+* 设置耳返音量，相见 [setInEarMonitoringVolume](https://docs.agora.io/cn/Voice/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/setInEarMonitoringVolume:)  。
 
 
 ### 调整伴奏音量：
