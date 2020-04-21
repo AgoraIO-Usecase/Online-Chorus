@@ -127,7 +127,7 @@ Other Language: [English](README.md)
 
 #### 音乐播放端
 
-1. 创建 RtcEngine 对象，并填入 App ID，详见 [create()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android)。
+1. 创建 RtcEngine 对象，并填入 App ID，详见 [create()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#a35466f690d0a9332f24ea8280021d5ed)。
 
  ```
 
@@ -136,12 +136,12 @@ Other Language: [English](README.md)
                                                 IRtcEngineEventHandler handler);
  ```
 
-2. 设置频道为通信模式，详见 [setChannelProfile()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+2. 设置频道为通信模式，详见 [setChannelProfile()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#a1bfb76eb4365b8b97648c3d1b69f2bd6) 。
 
  ```
    public abstract int setChannelProfile(int profile);
  ```
-3. 创建并加入频道, 详见 [joinchannel()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+3. 创建并加入频道, 详见 [joinchannel()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_channel.html#acdc8533c8331072104aaa4f1f189835f) 。
 
  ```
 
@@ -151,7 +151,7 @@ Other Language: [English](README.md)
                                    int optionalUid);
  ```
 
-4. 开始播放伴奏，详见 [startAudioMixing()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+4. 开始播放伴奏，详见 [startAudioMixing()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#ac56ceea1a143a4898382bce10b04df09) 。
 
  ```
 
@@ -161,7 +161,7 @@ Other Language: [English](README.md)
                                         int cycle);
  ```
 
-5. 离开频道 (leaveChannel)，详见 [leaveChannel()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+5. 离开频道 (leaveChannel)，详见 [leaveChannel()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_channel.html#a04fabd269f2123aca0563cc57dae05b6) 。
 
  ```
 
@@ -170,11 +170,11 @@ Other Language: [English](README.md)
  ```
 **注意:** 伴奏音量应小于人声。
 
-6. 离开频道，详见 [leaveChannel()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+
 
 #### 歌手端
 
-1. 创建 RtcEngine 对象，并填入 App ID，详见 [create()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+1. 创建 RtcEngine 对象，并填入 App ID，详见 [create()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#a35466f690d0a9332f24ea8280021d5ed) 。
 
  ```
 
@@ -183,7 +183,7 @@ Other Language: [English](README.md)
                                                 IRtcEngineEventHandler handler);
  ```
 
-2. 设置频道为通信模式，详见 [setChannelProfile()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+2. 设置频道为通信模式，详见 [setChannelProfile()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#a1bfb76eb4365b8b97648c3d1b69f2bd6) 。
 
  ```
 
@@ -203,7 +203,7 @@ Other Language: [English](README.md)
    mRtcEngine.setParameters("{\"che.audio.neteq.mindelay\":0}");
 
  ```
-4. 创建并加入频道, 详见 [joinchannel()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+4. 创建并加入频道, 详见 [joinchannel()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_channel.html#acdc8533c8331072104aaa4f1f189835f) 。
 
  ```
 
@@ -212,7 +212,7 @@ Other Language: [English](README.md)
                                    String optionalInfo,
                                    int optionalUid);
  ```
-5. 离开频道 (leaveChannel)，详见 [leaveChannel()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+5. 离开频道 (leaveChannel)，详见 [leaveChannel()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_channel.html#a04fabd269f2123aca0563cc57dae05b6) 。
 
  ```
 
@@ -272,26 +272,26 @@ Other Language: [English](README.md)
 
 #### 音乐播放端
 
-1. 创建 RtcEngine 对象，并填入 App ID，详见 [sharedEngineWithappId](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+1. 创建 RtcEngine 对象，并填入 App ID，详见 [sharedEngineWithappId](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/sharedEngineWithAppId:delegate:) 。
 
-2. 设置频道为 **通信模式**，详见 [setChannelProfile](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+2. 设置频道为 **通信模式**，详见 [setChannelProfile](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/setChannelProfile:) 。
 
-3. 创建并加入频道, 详见 [joinChannelByToken](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+3. 创建并加入频道, 详见 [joinChannelByToken](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/joinChannelByToken:channelId:info:uid:joinSuccess:) 。
 
-4. 静音所有远端音频，详见 [muteAllRemoteAudioStreams](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+4. 静音所有远端音频，详见 [muteAllRemoteAudioStreams](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/muteAllRemoteAudioStreams:) 。
 
-5. 开始播放伴奏，详见 [startAudioMixing](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+5. 开始播放伴奏，详见 [startAudioMixing](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/startAudioMixing:loopback:replace:cycle:) 。
 
 **注意:** 伴奏音量应小于人声。
 
-6. 离开频道，详见 [leaveChannel](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+6. 离开频道，详见 [leaveChannel](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/leaveChannel:) 。
 
 
 #### 歌手端
 
-1. 创建 RtcEngine 对象，并填入 App ID，详见 [sharedEngineWithappId](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+1. 创建 RtcEngine 对象，并填入 App ID，详见 [sharedEngineWithappId](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/sharedEngineWithAppId:delegate:) 。
 
-2. 设置频道为 **通信模式**，详见 [setChannelProfile](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+2. 设置频道为 **通信模式**，详见 [setChannelProfile](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/setChannelProfile:) 。
 
 3. 为歌手端设置低延时策略：
 
@@ -299,9 +299,9 @@ Other Language: [English](README.md)
 agoraKit.setParameters("{\"che.audio.lowlatency\":true}")
 agoraKit.setParameters("{\"rtc.lowlatency\":1}")
 ```
-4. 创建并加入频道, 详见 [joinChannelByToken](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+4. 创建并加入频道, 详见 [joinChannelByToken](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/joinChannelByToken:channelId:info:uid:joinSuccess:) 。
 
-5. 离开频道 (leaveChannel)，详见 [leaveChannel](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+5. 离开频道 (leaveChannel)，详见 [leaveChannel](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/leaveChannel:) 。
 
 
 ## 常见问题
@@ -332,6 +332,6 @@ iOS:
 
 ### 调整伴奏音量：
 
-* Android: 音乐播放端直接调整音量，详见 [adjustAudioMixingVolume()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_android?platform=Android) 。
+* Android: 音乐播放端直接调整音量，详见 [adjustAudioMixingVolume()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/java/classio_1_1agora_1_1rtc_1_1_rtc_engine.html#a13c5737248d5a5abf6e8eb3130aba65a) 。
 
-* iOS: 音乐播放端直接调整音量，详见 [adjustAudioMixingVolume()](https://docs.agora.io/cn/2.4/product/Interactive%20Broadcast/API%20Reference/live_video_ios?platform=iOS) 。
+* iOS: 音乐播放端直接调整音量，详见 [adjustAudioMixingVolume()](https://docs.agora.io/cn/Audio%20Broadcast/API%20Reference/oc/Classes/AgoraRtcEngineKit.html#//api/name/adjustAudioMixingVolume:) 。
